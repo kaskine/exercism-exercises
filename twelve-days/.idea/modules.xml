@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/twelve-days.iml" filepath="$PROJECT_DIR$/twelve-days.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/twelve-days_main.iml" filepath="$PROJECT_DIR$/.idea/modules/twelve-days_main.iml" group="twelve-days" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/twelve-days_test.iml" filepath="$PROJECT_DIR$/.idea/modules/twelve-days_test.iml" group="twelve-days" />
+    </modules>
+  </component>
+</project>
