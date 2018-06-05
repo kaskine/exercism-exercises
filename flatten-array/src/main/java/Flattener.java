@@ -1,15 +1,23 @@
 import java.util.LinkedList;
 import java.util.List;
 
-public class Flattener {
+class Flattener {
 
-    public <T> List<T> flatten(List<List> lists) {
-        LinkedList<T> linkedList = new LinkedList<>();
+    List<Object> flatten(List<Object> objectList) {
 
-        for (List<List> list: lists) {
-            list.addAll(linkedList);
+        LinkedList<Object> returnList = new LinkedList<>();
+        LinkedList<Object> stack = new LinkedList<>(objectList);
+
+        while (!stack.isEmpty()) {
+            Object obj = stack.pop();
+            if (obj instanceof List<?>) {
+                stack.addAll(0, (List<?>) obj);
+            }
+            else if (obj != null) {
+                returnList.add(obj);
+            }
         }
 
-        return linkedList;
+        return returnList;
     }
 }
