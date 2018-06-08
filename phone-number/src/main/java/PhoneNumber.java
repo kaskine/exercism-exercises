@@ -28,7 +28,7 @@ class PhoneNumber {
         if ((s.charAt(0) == '0' || s.charAt(0) == '1') || (s.charAt(3) == '0') || (s.charAt(3) == '1')) {
             throw new IllegalArgumentException("Illegal Area Or Exchange Code. Only 2-9 are valid digits");
         }
-        
+
         number = s;
     }
 
