@@ -3,6 +3,11 @@ public class Atbash {
     private final int BASE = 97;
     private final int MAX = 122;
 
+    /**
+     * Encodes a String using the Atbash Cipher
+     * @param string - The String to encode
+     * @return Returns the encoded String
+     */
     String encode(String string) {
 
         string = string.toLowerCase();
@@ -34,6 +39,11 @@ public class Atbash {
         return result.toString();
     }
 
+    /**
+     * Decodes a String that has been encoded using the Atbash Cipher
+     * @param string - The String to decode
+     * @return Returns the decoded String
+     */
     String decode(String string) {
 
         string = string.toLowerCase();
